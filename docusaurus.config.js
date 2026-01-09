@@ -12,7 +12,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Cash Box',
   tagline: 'The Open Source Freedom Appliance',
-  favicon: 'img/favicon.ico',
+  // favicon: 'img/favicon.ico',
+  favicon: 'img/cash-box-logo-512px.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
