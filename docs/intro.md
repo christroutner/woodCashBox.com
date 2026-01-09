@@ -2,46 +2,40 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introduction
 
-Let's discover **Docusaurus in less than 5 minutes**.
+The **Cash Box** is a hardware appliance which runs the [Cash Stack](https://cashstack.info) suite of software. This is infrastructure and applications running on top of the Bitcoin Cash blockchain, Inter-Planetary File System ([IPFS](https://ipfs.tech/)), and [Nostr](https://nostr.org/).
 
-## Getting Started
+The Cash Box is primarily an appliance for software developers and self-hosting advocates. But it's also very useful as a point of sale (PoS) device for merchants. It can be mounted to the wall, it can be customized, and the touch screen makes it a great appliance.
 
-Get started by **creating a new site**.
+## Hardware
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+The computation of the Cash Box is built with the following hardware:
+- Raspberry Pi 5 with 16GB of SRAM
+- 10.5 inch touch screen
+- 2TB NVMe SSD
 
-### What you'll need
+The body of the Cash Box is built with 5mm laser-cut and engraved plywood. 3D printing brackets are used to hold everything together.
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+## Software
 
-## Generate a new site
+The Cash Box runs the following Cash Stack infrastructure and applications:
 
-Generate a new Docusaurus site using the **classic template**.
+- Infrastructure
+  - [BCHN](https://bitcoincashnode.org/en/) full node
+  - [Fulcrum](https://github.com/cculianu/Fulcrum?tab=readme-ov-file) indexer
+  - [SLP Token](https://slp-tokens.com) indexer
+  - [bch-api](https://cashstack.info/docs/back-end/psf-bch-api) REST API
+  - [ipfs-file-pin-service](https://cashstack.info/docs/IPFS/file-storage) IPFS file network
 
-The classic template will automatically be added to your project after you run the command:
+- Applications
+  - [Electron Cash](https://electroncash.org/) wallet with Cash Fusion for financial privacy
+  - [BCH Block Explorer](https://bch.loping.net/) (self-hosted) auditing tool
+  - [Point of Sale](https://pos.cash/) (self-hosted) app for merchants to recieve BCH payments
+  - [Web Wallet](https://wallet.psfoundation.info/) (self-hosted) wallet for BCH and SLP tokens.
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+## Build or Buy
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+This documentation site exists to encourage, educate, and promote the building of this the Cash Box. 3D print files, laser engraver files, links to open source software, tutorial videos, and written guides cover the various skill sets and activities required to build a Cash Box from scratch.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Parts, partial builds, and complete builds of the Cash Box are available [at the store](https://store.woodcashbox.com). We strive to provide access to all levels. The store also offers management plans to keep the software up-to-date.
