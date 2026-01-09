@@ -1,11 +1,12 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import { FaBookOpen, FaShoppingCart } from 'react-icons/fa';
 
 const FeatureList = [
   {
     title: 'Documentation',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: FaBookOpen,
     description: (
       <>
         Learn about the Cash Box, what goes into it, and how to build your own.
@@ -14,7 +15,7 @@ const FeatureList = [
   },
   {
     title: 'Store',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: FaShoppingCart,
     description: (
       <>
         Building a Cash Box is complex, requires specific knowlege, and specific
