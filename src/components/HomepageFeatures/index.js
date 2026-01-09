@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 import { FaBookOpen, FaShoppingCart } from 'react-icons/fa';
@@ -7,6 +8,7 @@ const FeatureList = [
   {
     title: 'Documentation',
     Svg: FaBookOpen,
+    link: '/docs/intro',
     description: (
       <>
         Learn about the Cash Box, what goes into it, and how to build your own.
@@ -16,6 +18,8 @@ const FeatureList = [
   {
     title: 'Store',
     Svg: FaShoppingCart,
+    link: 'http://store.woodcashbox.com',
+    isExternal: true,
     description: (
       <>
         Building a Cash Box is complex, requires specific knowlege, and specific
@@ -26,9 +30,9 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
-  return (
-    <div className={clsx('col col--6')}>
+function Feature({Svg, title, description, link, isExternal}) {
+  const content = (
+    <>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
@@ -36,6 +40,20 @@ function Feature({Svg, title, description}) {
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
       </div>
+    </>
+  );
+
+  return (
+    <div className={clsx('col col--6')}>
+      {isExternal ? (
+        <a href={link} className={styles.featureLink} target="_blank" rel="noopener noreferrer">
+          {content}
+        </a>
+      ) : (
+        <Link to={link} className={styles.featureLink}>
+          {content}
+        </Link>
+      )}
     </div>
   );
 }

@@ -9,3 +9,16 @@
   height: 200px;
   width: 200px;
 }
+
+.featureLink {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s;
+}
+
+.featureLink:hover {
+  opacity: 0.8;
+  text-decoration: none;
+  color: inherit;
+}
