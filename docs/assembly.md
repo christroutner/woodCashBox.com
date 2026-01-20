@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Assembly
 
-Some intro text here.
+This page gives an overview of how to connect the various pieces of the Cash Box together.
 
 ## The Box
 
