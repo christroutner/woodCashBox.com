@@ -1,5 +1,7 @@
 import React from 'react';
 import Layout from '@theme/Layout';
+import ROICalculator from '../components/ROICalculator';
+
 
 export default function Sovereignty() {
   return (
@@ -36,6 +38,11 @@ export default function Sovereignty() {
 
         <h3 style={{ marginTop: '1.5rem' }}>Why Merchants Love It</h3>
         <p>The Cash Box works as a Point of Sale terminal. Mount it to the wall, keep it on a counter — your choice. Accept Bitcoin Cash payments and keep 100% of every penny.</p>
+        
+        {/* Calculate Your Savings */}
+        <section style={{ maxWidth: '800px', margin: '3rem auto', padding: '2rem' }}>
+          <ROICalculator />
+        </section>
       </section>
 
       {/* CTA Section */}
