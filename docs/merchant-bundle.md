@@ -136,9 +136,9 @@ Remote installation support. We'll walk you through wallet setup, first transact
 | Metric | Target |
 |--------|--------|
 | Bundle attach rate | 40% of Cash Box sales |
-| Customer satisfaction | >90% would recommend |
-| Support response time | <24 hours |
-| Setup completion | >95% within 2 weeks |
+| Customer satisfaction | &gt;90% would recommend |
+| Support response time | &lt;24 hours |
+| Setup completion | &gt;95% within 2 weeks |
 
 ---
 
