@@ -95,7 +95,7 @@ export default function Freelancer() {
       {/* CTA Section */}
       <section className={styles.ctaSection}>
         <h2>Own Your Payment Stack</h2>
-        <p>Professional contractors worldwide are switching from fragile processor accounts to direct BCH payments.</p>
+        <p className={styles.limited}>Hand-built and tested — 2-3 days per unit</p>
         <a href="https://store.woodcashbox.com" className={styles.ctaButton}>
           Own Your Payment Stack
         </a>

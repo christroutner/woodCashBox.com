@@ -45,6 +45,12 @@ export default function Sovereignty() {
         </section>
       </section>
 
+      {/* Urgency Banner */}
+      <div style={{ background: '#fff3cd', border: '1px solid #ffc107', padding: '1rem', margin: '1rem 0', borderRadius: '4px' }}>
+        <p style={{ color: '#856404' }}>🔥 Limited production run — Each Cash Box is handmade and tested</p>
+        <p style={{ color: '#856404' }}>⏱️ Current build queue: Ships within 5-7 business days</p>
+      </div>
+
       {/* CTA Section */}
       <section style={{ textAlign: 'center', padding: '2rem 1rem' }}>
         <h2>Ready to Own Your Payment Stack?</h2>

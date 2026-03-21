@@ -68,7 +68,7 @@ export default function CoffeeShop() {
       {/* CTA Section */}
       <section className={styles.ctaSection}>
         <h2>Ready to Take Back Your Coffee Shop?</h2>
-        <p>Join local businesses switching from expensive processors to censorship-resistant BCH payments.</p>
+        <p className={styles.limited}>Join merchants in 12+ countries who've already made the switch</p>
         <a href="https://store.woodcashbox.com" className={styles.ctaButton}>
           Get Your Cash Box
         </a>

@@ -129,6 +129,20 @@
   border-radius: calc(var(--ifm-spacing-unit) / 2);
 }
 
+/* Urgency styles */
+.urgencyBanner {
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+.limited {
+  color: #856404;
+  font-weight: bold;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .hero h1 {

@@ -92,7 +92,7 @@ export default function OnlineStore() {
       {/* CTA Section */}
       <section className={styles.ctaSection}>
         <h2>Start Accepting Bitcoin Cash Today</h2>
-        <p>Join e-commerce stores worldwide switching from expensive processors to low-fee BCH payments.</p>
+        <p className={styles.limited}>Limited spots available for Q2 2026 delivery</p>
         <a href="https://store.woodcashbox.com" className={styles.ctaButton}>
           Start Accepting BCH
         </a>
