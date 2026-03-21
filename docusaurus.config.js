@@ -91,10 +91,37 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            href: '/sovereignty',
+            label: 'Sovereignty Appliance',
             position: 'left',
-            label: 'Docs',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'merchantsSidebar',
+            label: 'Build Your Own',
+            position: 'left',
+          },
+          {
+            type: 'dropdown',
+            label: 'Technical',
+            position: 'left',
+            items: [
+              {
+                type: 'doc',
+                docId: 'hardware',
+                label: 'Hardware',
+              },
+              {
+                type: 'doc',
+                docId: 'assembly',
+                label: 'Assembly',
+              },
+              {
+                type: 'doc',
+                docId: 'software',
+                label: 'Software',
+              },
+            ],
           },
           {
             href: 'https://store.woodcashbox.com',
@@ -102,7 +129,13 @@ const config = {
             position: 'left',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            type: 'docSidebar',
+            sidebarId: 'referenceSidebar',
+            position: 'right',
+            label: 'Docs',
+          },
+          {
+            href: 'https://github.com/christroutner/woodCashBox.com',
             label: 'GitHub',
             position: 'right',
           },
