@@ -1,72 +1,81 @@
 # Task 1.1: Audit Current Site Structure
 
-**Assignee:** Pi  
-**Branch:** `bot-unstable` (already on this branch)  
-**Repository:** `/home/pi/work/woodCashBox.com`
-
----
-
 ## Objective
-List all existing pages, document navigation structure, catalog content in docs/ and blog/. Create site-audit.md in repo root.
+Create a complete audit of the WoodCashBox.com website structure. This is the foundation for reorganizing content to support the "Sovereignty Appliance" messaging.
 
-## Steps
+## What to Audit
 
-1. **Catalog all docs/ pages**
-   - List every .md file in the docs/ directory
-   - Note the purpose of each page
-   - Identify which are technical vs merchant-focused
+1. **docs/ directory** — All documentation pages
+   - List every .md file
+   - Note the purpose of each
+   - Mark as "keep" or "relocate"
 
-2. **Catalog all blog/ posts**
-   - List all posts in blog/
-   - Note dates and topics
+2. **blog/ directory** — All blog posts
+   - List every .md or .mdx file
+   - Note publish dates and topics
+   - Mark as "keep"
 
-3. **Document navigation structure**
-   - Check docusaurus.config.js for current nav
-   - Note sidebar organization
+3. **Navigation structure**
+   - Document current docusaurus.config.js nav
+   - List all sidebar items
+   - Note the hierarchy
 
-4. **Mark content as "keep" or "relocate"**
-   - "keep" = stays in current location
-   - "relocate" = move to new section (but don't delete)
+4. **src/pages/** — Custom pages
+   - List all existing pages
+   - Note their purpose
+
+5. **Static assets**
+   - Images
+   - 3D files
+   - Laser files
 
 ## Output File
 
 Create `site-audit.md` in the repo root with this structure:
 
 ```markdown
-# Site Audit Report
+# WoodCashBox.com Site Audit
 
-## docs/ Pages
-| File | Purpose | Action |
-|------|---------|--------|
-| intro.md | Introduction | relocate |
-| ... | ... | ... |
+## Summary
+- Total docs pages: X
+- Total blog posts: X
+- Total custom pages: X
 
-## blog/ Posts
-| File | Date | Topic | Action |
-|------|------|-------|--------|
-| ... | ... | ... | ... |
+## docs/ Directory
+| File | Current Location | Purpose | Action |
+|------|------------------|---------|--------|
+| intro.md | docs/intro.md | Overview | relocate |
+...
 
-## Current Navigation
-- Nav item 1 → links to...
-- Nav item 2 → links to...
+## blog/ Directory
+...
 
-## Proposed Changes
-- Move X from Y to Z
-- Add new section for...
+## Navigation Structure
+...
+
+## Static Assets
+...
+
+## Notes
+- Any content gaps identified
+- Any broken links found
 ```
 
+## Constraints (CRITICAL)
+- **NO deletion** — only document what exists
+- **NO modifications** to existing files
+- Focus on cataloging, not changing
+
 ## Acceptance Criteria
-- [ ] All docs/ pages catalogued
-- [ ] All blog/ posts catalogued
+- [ ] site-audit.md exists in repo root
+- [ ] All docs/ pages listed with purpose
+- [ ] All blog/ posts listed with dates
 - [ ] Navigation structure documented
-- [ ] Content marked as "keep" or "relocate"
+- [ ] Each item marked as "keep" or "relocate"
 
-## Critical Constraint
-**NO DELETION ALLOWED** — Move or reorganize only. Never delete existing content.
-
----
-
-When complete:
-1. Commit: `git add site-audit.md && git commit -m "1.1 Add site audit report"`
-2. Push: `git push origin bot-unstable`
-3. Message Ben in Telegram that Task 1.1 is complete
+## When Done
+1. Review your site-audit.md for completeness
+2. git add site-audit.md
+3. git commit -m "Add site audit for sovereignty appliance reorg"
+4. git push origin bot-unstable
+5. Send API message: "task-1.1 complete"
